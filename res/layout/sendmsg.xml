@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/zxing_transparent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שלח הודעה"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteSmoke"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:id="@+id/layerTopic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <EditText
+                android:id="@+id/inputTopic"
+                android:gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textSize="7pt"
+                android:imeOptions="actionNext"
+                android:hint="כותרת"
+                android:singleLine="true"
+                android:inputType="textLongMessage"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/corner"
+                android:backgroundTintMode="@color/DarkRed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layerContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <EditText
+                android:id="@+id/inputContent"
+                android:gravity="right"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:textSize="7pt"
+                android:imeOptions="actionDone"
+                android:hint="הוסף פירוט"
+                android:inputType="textLongMessage"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/corner"
+                android:backgroundTintMode="@color/DarkRed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:id="@+id/lemiMail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <Spinner
+                    android:id="@+id/inputLemiMail"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:hint="סוג עסק"
+                    android:imeOptions="actionDone"
+                    android:inputType="textLongMessage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="שלח"
+            android:textColor="@color/DarkRed" />
+
+    </LinearLayout>
+
+</LinearLayout>

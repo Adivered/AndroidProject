@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/zxing_transparent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/managerpage_bar"
+                layout="@layout/toolbar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/title" />
+
+                <TextView
+                    android:id="@+id/manager_meetings_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-100dp"
+                    android:typeface="sans"
+                    android:text="פגישות"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="12pt"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pgishot_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/todayPgisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="פגישות של היום"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/futurePgisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="פגישות עתידיות"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/addPgisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="הוסף פגישה"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/deletePgisha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="מחק פגישה"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Website</string>
+    <string name="title_activity_splash">משרד</string>
+    <string name="title_activity_maps">סוג העסק</string>
+    <string name="navigation_drawer_open">פתיחה</string>
+    <string name="navigation_drawer_close">סגירה</string>
+    <string-array name="sogEsek">
+        <item>בחר סוג עסק</item>
+        <item>בית מלאכה</item>
+        <item>חנות</item>
+        <item>מוסד</item>
+        <item>מפעל</item>
+        <item>משרד</item>
+        <item>אחר</item>
+    </string-array>
+    <string-array name="sogAnaf">
+        <item>בחר סוג ענף</item>
+        <item>מזון</item>
+        <item>מסחר</item>
+        <item>פיננסים</item>
+        <item>רכב</item>
+        <item>שרותים</item>
+        <item>אחר</item>
+    </string-array>
+    <string-array name="sogTafkid">
+        <item>בחר עם איזה בעל תפקיד נפגשת</item>
+        <item>בעלים</item>
+        <item>הנהלת חשבונות</item>
+        <item>מנהל מקום</item>
+        <item>אחר</item>
+    </string-array>
+    <string-array name="sogResult">
+        <item>בחר תוצאה</item>
+        <item>מו"מ על תנאי ההסכם</item>
+        <item>נקבעה פגישה נוספת</item>
+        <item>נחתם הסכם</item>
+        <item>נחתם הסכם והועברו תיקים</item>
+        <item>אין עניין בשירות</item>
+        <item>אחר</item>
+    </string-array>
+
+
+    <string-array name="lemiMail">
+        <item>בחר למי</item>
+        <item>כולם</item>
+        <item>עדי ורד</item>
+        <item>איתמר דגני</item>
+        <item>אבי אלמקייס</item>
+        <item>אורן אשר</item>
+        <item>איציק כהן</item>
+        <item>אפרת כהן</item>
+        <item>בני כהן</item>
+        <item>חן זלצר</item>
+        <item>מורן יצחק</item>
+    </string-array>
+
+    <string name="title_activity_user_toolbar">user_toolbar</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+</resources>

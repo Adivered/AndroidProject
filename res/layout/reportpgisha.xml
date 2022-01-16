@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/pgisha_background">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+        <include
+            android:id="@+id/reportlogin_bar"
+            layout="@layout/toolbar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/title" />
+
+            <TextView
+                android:id="@+id/pgishaHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-100dp"
+                android:typeface="sans"
+                android:layout_gravity="center"
+                android:text="דווח פגישה"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                >
+            </TextView>
+        </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layoutDirection="ltr">
+
+            <LinearLayout
+                android:id="@+id/layerTopic"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/txtNEsek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="שם העסק: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/inputNEsek"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:textSize="7pt"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="textLongMessage"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTintMode="@color/DarkRed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerLoc"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="כתובת:"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/inputLoc"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:inputType="textLongMessage"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textSize="7pt"
+                    android:background="@drawable/corner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerDate"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="תאריך: "
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/inputDate"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:inputType="datetime"
+                    android:imeOptions="actionNext"
+                    android:textSize="7pt"
+                    android:background="@drawable/corner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerSogEishKesher"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSogEishKesher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="איש קשר: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/inputSogEishKesher"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:textSize="7pt"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:inputType="textLongMessage"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/corner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerSogEsek"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtSogEsek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="סוג עסק:"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/inputSogEsek"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/corner"
+                    android:imeOptions="actionNext"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:inputType="textLongMessage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerSogAnaf"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSogAnaf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="סוג ענף: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/inputSogAnaf"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:background="@drawable/corner"
+                    android:imeOptions="actionNext"
+                    android:focusable="true"
+                    android:inputType="textLongMessage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerSogEishTafkid"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSogEishTafkid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="תפקיד: "
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/inputSogEishTafkid"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="45dp"
+                    android:background="@drawable/corner"
+                    android:imeOptions="actionNext"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:inputType="textLongMessage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layerResults"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="תוצאה: "
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <Spinner
+                    android:id="@+id/inputResults"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/corner"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:inputType="textLongMessage"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SendReport"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/mail_can_512"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txtSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="שלח"
+                        android:textStyle="bold"
+                        android:textSize="20dp">
+                    </TextView>
+                </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/reportlogin_bar"
+                layout="@layout/toolbar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/title" />
+
+                <TextView
+                    android:id="@+id/addUserHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-100dp"
+                    android:typeface="sans"
+                    android:text="הוספת משתמש"
+                    android:textSize="12pt"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/purple_48">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAddUserUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="שם משתמש:"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_AddUser_Username"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="22dp"
+                        android:background="@drawable/corner"
+                        android:backgroundTintMode="@color/DarkRed"
+                        android:gravity="right"
+                        android:imeOptions="actionDone"
+                        android:inputType="textLongMessage"
+                        android:padding="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textSize="5pt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/purple_48">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAddUserPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="סיסמא:"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_AddUser_Password"
+                        android:gravity="right"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textSize="5pt"
+                        android:layout_marginRight="66dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/corner"
+                        android:backgroundTintMode="@color/DarkRed"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/purple_48">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAddUserEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="אימייל:"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_AddUser_Email"
+                        android:gravity="right"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textSize="5pt"
+                        android:layout_marginRight="70dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/corner"
+                        android:backgroundTintMode="@color/DarkRed"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/purple_48">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAddUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="שם מלא:"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_AddUser_Name"
+                        android:gravity="right"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textSize="5pt"
+                        android:layout_marginRight="53dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/corner"
+                        android:backgroundTintMode="@color/DarkRed"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/purple_48">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAddUserRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="דרגה:"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_AddUser_Rank"
+                        android:gravity="right"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textSize="5pt"
+                        android:layout_marginRight="79dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/corner"
+                        android:backgroundTintMode="@color/DarkRed"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/etAddUser_Button"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/v_512"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="הוסף">
+
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

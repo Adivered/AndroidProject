@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layoutDirection="rtl"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loginpage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="כניסה"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:typeface="sans"
+            android:textColor="@color/WhiteSmoke"
+            />
+        <TextView
+            android:id="@+id/loginpage_vpnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="מחובר לVPN"
+            android:textColor="@color/GreenYellow"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/customer_48"/>
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:backgroundTintMode="@color/DarkRed"                    android:gravity="center"
+                    android:hint="שם משתמש"
+                    android:textColor="@color/DarkRed"
+                    android:layout_marginLeft="40dp"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColorHint="@color/WhiteSmoke" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@mipmap/password_48"/>
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="סיסמא"
+                    android:textColor="@color/DarkRed"
+                    android:layout_marginLeft="32dp"
+                    android:backgroundTintMode="@color/DarkRed"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/WhiteSmoke"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="20dp">
+
+                <CheckBox
+                    android:id="@+id/saveMe"
+                    android:gravity="center"
+                    android:backgroundTint="@color/LightGreen"
+                    android:buttonTint="@color/DarkRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:id="@+id/loginpage_saveMeText"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="זכור אותי"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="6pt"
+                    android:typeface="sans"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="-70dp"
+                android:background="@drawable/corner"
+                android:text="התחבר"
+                android:textColor="@color/DarkRed" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
